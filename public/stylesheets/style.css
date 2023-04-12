@@ -90,13 +90,13 @@ input[type="radio"]{
   cursor: default;
   user-select: none;
 }
-#signup:checked ~ label.login{
+#signup:checked ~ label._login{
   color: #000;
 }
-#login:checked ~ label.signup{
+#_login:checked ~ label.signup{
   color: #000;
 }
-#login:checked ~ label.login{
+#_login:checked ~ label._login{
   cursor: default;
   user-select: none;
 }
