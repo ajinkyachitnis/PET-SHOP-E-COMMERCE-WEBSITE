@@ -6,7 +6,7 @@ const mysql_connector = require('mysql');
 var connection = {}
 async function databaseconnect() {
   connection = await mysql_connector.createConnection({
-    host : '10.0.8.207',
+    host : 'localhost',
     user : 'root',
     password  :'abcd',
     database : 'petshop'
@@ -31,8 +31,8 @@ router.get('/', function(req, res, next) {
 });
 
 // GET Login And SignUP page
-router.get('/index', function(req, res, next) {
-  res.render('index');
+router.get('/login', function(req, res, next) {
+  res.render('login');
 });
 
 // CATS PRODUCTS 
@@ -111,5 +111,3 @@ router.get("/bird-cages", async function(req,res) {
 })
 
 module.exports = router;
-
-
